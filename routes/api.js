@@ -1,5 +1,9 @@
 'use strict';
 
+const mongoose = require("../mongo.config");
+const Issue = require("../model/models");
+const Project = require("../model/models");
+
 module.exports = function (app) {
 
   app.route('/api/issues/:project')
